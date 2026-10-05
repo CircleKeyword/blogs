@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="auto">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>欢迎来到你的本地博客 · 我的博客</title>
+<meta name="description" content="这篇会自动生成一篇示例，用来演示整套流程：图形化编辑器写文章 → 一键生成静态站点 → 直接双击 HTML 离线阅读。" />
+<meta name="author" content="Administrator" /><meta property="og:title" content="欢迎来到你的本地博客" /><meta property="og:type" content="article" />
+<link rel="stylesheet" href="../assets/site.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='24'%3E%E2%97%8D%3C/text%3E%3C/svg%3E" />
+<link rel="alternate" type="application/rss+xml" title="我的博客" href="../feed.xml" />
+<script>try{var t=localStorage.getItem('blog-theme');if(t&&t!=='auto'){document.documentElement.dataset.theme=t;}}catch(e){}</script>
+</head>
+<body class="page-post">
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark" aria-hidden="true">◍</span>
+      <span class="brand-text"><b>我的博客</b><i>本地静态博客 · 随手记录</i></span>
+    </a>
+    <nav class="site-nav">
+      <a href="../index.html">首页</a>
+      <a href="../archive.html">归档</a>
+      <a href="../tags.html">标签</a>
+      <a href="../feed.xml">RSS</a>
+      <button id="theme-btn" class="theme-btn" type="button" title="切换深浅色">◐</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+<article class="post">
+  <header class="post-head">
+    <h1>欢迎来到你的本地博客</h1>
+    <p class="post-meta"><time datetime="2026-10-05">2026-10-05</time><span class="dot">·</span><span>1 分钟阅读</span></p>
+    <div class="entry-meta"><a class="tag" href="../tag/%E8%AF%B4%E6%98%8E.html">说明</a><a class="tag" href="../tag/%E5%BC%80%E5%A7%8B.html">开始</a></div>
+  </header>
+  <details class="toc" open><summary>目录</summary><ul><li class="toc-l2"><a href="#三个入口">三个入口</a></li><li class="toc-l2"><a href="#编辑器能做什么">编辑器能做什么</a></li><li class="toc-l2"><a href="#图片放哪">图片放哪</a></li></ul></details>
+  <div class="prose">
+<h1 id="你好呀">你好呀 👋</h1>
+<p>这是你的<strong>本地静态博客</strong>。整站没有任何后端依赖：写完文章点一下「发布并生成」，<code>site/</code> 目录里就会多出真实的 HTML 文件，拷到 U 盘、发给同学、扔到任何静态托管（GitHub Pages / Netlify / 自己的服务器）都能直接跑。</p>
+<h2 id="三个入口">三个入口</h2>
+<div class="table-wrap"><table><thead><tr><th>想做什么</th><th>双击哪个文件</th></tr></thead><tbody><tr><td>写新文章 / 改文章</td><td><code>启动编辑器.bat</code></td></tr><tr><td>只重新生成静态站点</td><td><code>生成博客.bat</code></td></tr><tr><td>直接看博客</td><td><code>打开博客.bat</code></td></tr></tbody></table></div>
+<h2 id="编辑器能做什么">编辑器能做什么</h2>
+<ul><li>左侧列表选文章，右边直接改；标题、日期、标签、摘要都是表单字段，不用手写 frontmatter</li><li>写好 slug（链接名）后会自动去重，日期改了文件名也会跟着改，不会留一堆重名文件</li><li>右边是<strong>实时预览</strong>，用的是最终产物的同一套样式，所见即所得</li><li>「存为草稿」勾上就只在编辑器里留着，站点上不会出现，放心写</li><li><code>Ctrl + S</code> 保存并生成，<code>Ctrl + Enter</code> 同样发布，<code>Ctrl + B / I / K</code> 是加粗 / 斜体 / 链接</li></ul>
+<blockquote>
+<p>文章是纯文本 Markdown 存在 <code>posts/</code> 里的，用记事本、VS Code、Obsidian 直接改也一样，编辑器只是给你省事。</p>
+</blockquote>
+<h2 id="图片放哪">图片放哪</h2>
+<p>把图片丢进 <code>posts/</code> 旁边任意位置都行，正文里用相对路径引用即可，例如：</p>
+<div class="code-block"><span class="code-lang">markdown</span><pre><code class="language-markdown">![截图](images/shot.png)</code></pre></div>
+<p>生成的 <code>site/posts/xxx.html</code> 会原样引用这个路径，所以图片记得跟 <code>posts/</code> 一起拷走。</p>
+<hr />
+<p>祝写字愉快喵～ 🐾</p>
+  </div>
+  <footer class="post-foot">
+    <a class="back" href="../index.html">← 回到首页</a>
+    <nav class="post-nav"><a class="pn-prev" href="markdown-cheatsheet.html">← Markdown 速查（这篇本身就是渲染效果演示）</a><span class="pn-empty"></span></nav>
+  </footer>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <p>本地静态博客 · 双击 site/index.html 即可离线阅读全部文章</p>
+  </div>
+</footer>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

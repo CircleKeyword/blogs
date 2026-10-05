@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="auto">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Markdown 速查（这篇本身就是渲染效果演示） · 我的博客</title>
+<meta name="description" content="常用的 Markdown 语法一页看完，顺便验证标题、列表、表格、代码块、引用这些样式的实际渲染结果。" />
+<meta name="author" content="Administrator" /><meta property="og:title" content="Markdown 速查（这篇本身就是渲染效果演示）" /><meta property="og:type" content="article" />
+<link rel="stylesheet" href="../assets/site.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='24'%3E%E2%97%8D%3C/text%3E%3C/svg%3E" />
+<link rel="alternate" type="application/rss+xml" title="我的博客" href="../feed.xml" />
+<script>try{var t=localStorage.getItem('blog-theme');if(t&&t!=='auto'){document.documentElement.dataset.theme=t;}}catch(e){}</script>
+</head>
+<body class="page-post">
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark" aria-hidden="true">◍</span>
+      <span class="brand-text"><b>我的博客</b><i>本地静态博客 · 随手记录</i></span>
+    </a>
+    <nav class="site-nav">
+      <a href="../index.html">首页</a>
+      <a href="../archive.html">归档</a>
+      <a href="../tags.html">标签</a>
+      <a href="../feed.xml">RSS</a>
+      <button id="theme-btn" class="theme-btn" type="button" title="切换深浅色">◐</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+<article class="post">
+  <header class="post-head">
+    <h1>Markdown 速查（这篇本身就是渲染效果演示）</h1>
+    <p class="post-meta"><time datetime="2026-10-05">2026-10-05</time><span class="dot">·</span><span>1 分钟阅读</span></p>
+    <div class="entry-meta"><a class="tag" href="../tag/%E6%95%99%E7%A8%8B.html">教程</a><a class="tag" href="../tag/Markdown.html">Markdown</a></div>
+  </header>
+  <details class="toc" open><summary>目录</summary><ul><li class="toc-l2"><a href="#文字样式">文字样式</a></li><li class="toc-l2"><a href="#列表">列表</a></li><li class="toc-l2"><a href="#引用与分割线">引用与分割线</a></li><li class="toc-l2"><a href="#代码">代码</a></li><li class="toc-l2"><a href="#表格">表格</a></li><li class="toc-l2"><a href="#小技巧">小技巧</a></li></ul></details>
+  <div class="prose">
+<h2 id="文字样式">文字样式</h2>
+<p><strong>加粗</strong>、<em>斜体</em>、<del>删除线</del>、<code>行内代码</code>，以及<a href="https://commonmark.org">普通链接</a>和裸链接 <a href="https://www.markdownguide.org" target="_blank" rel="noopener">https://www.markdownguide.org</a> 。</p>
+<p>中英文混排的换行不会多出空格：这一行和这一行在渲染时是连在一起的。</p>
+<h2 id="列表">列表</h2>
+<ul><li>无序列表第一项</li><li>第二项<ul><li>嵌套一层</li><li>再来一个</li></ul></li><li>第三项</li></ul><ol><li>有序列表</li><li>第二项<ul><li>里面还能套无序</li></ul></li></ol></ul>
+<h2 id="引用与分割线">引用与分割线</h2>
+<blockquote>
+<p>引用块用左边的细线标记，适合放摘录或者重点提醒。</p>
+<p>引用里可以有多段。</p>
+</blockquote>
+<hr />
+<h2 id="代码">代码</h2>
+<p>行内 <code>pip install nothing</code> 这样写；代码块会带语言标签：</p>
+<div class="code-block"><span class="code-lang">python</span><pre><code class="language-python">def hello(name: str) -&gt; str:
+    &quot;&quot;&quot;写点代码也不怕，整站零依赖。&quot;&quot;&quot;
+    return f&quot;你好，{name}！&quot;
+
+print(hello(&quot;主人&quot;))</code></pre></div>
+<h2 id="表格">表格</h2>
+<div class="table-wrap"><table><thead><tr><th>语法</th><th>效果</th><th>备注</th></tr></thead><tbody><tr><td><code># 标题</code></td><td>各级标题</td><td>二三级标题会自动进目录</td></tr><tr><td><code>- 项</code></td><td>无序列表</td><td>支持嵌套</td></tr><tr><td><code>&gt; 引用</code></td><td>引用块</td><td></td></tr><tr><td><code>---</code></td><td>分割线</td><td></td></tr></tbody></table></div>
+<h2 id="小技巧">小技巧</h2>
+<ul><li>正文里单独写一行 <code>---</code> 会变成分割线，所以别拿它当排版空行</li><li>一篇文章里二级标题超过 3 个，文章页会自动出现「目录」</li><li>想让某段话出现在首页摘要里，就在编辑器的「摘要」框里写；留空则自动取正文开头</li></ul>
+  </div>
+  <footer class="post-foot">
+    <a class="back" href="../index.html">← 回到首页</a>
+    <nav class="post-nav"><span class="pn-empty"></span><a class="pn-next" href="welcome.html">欢迎来到你的本地博客 →</a></nav>
+  </footer>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <p>本地静态博客 · 双击 site/index.html 即可离线阅读全部文章</p>
+  </div>
+</footer>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>
