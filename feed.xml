@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
-  <title>我的博客</title>
+  <title>博客</title>
   <link>about:blank</link>
-  <description>本地静态博客 · 随手记录</description>
+  <description>博客 · 随手记录</description>
   <lastBuildDate>Mon, 05 Oct 2026 08:23:56 +0800</lastBuildDate>
   <!-- 提示：config.json 的 base_url 为空，下面链接是相对路径；填上部署网址后重新生成即可 -->
   <item>
-    <title>Markdown 速查（这篇本身就是渲染效果演示）</title>
+    <title>Markdown 速查</title>
     <link>posts/markdown-cheatsheet.html</link>
     <guid isPermaLink="false">markdown-cheatsheet</guid>
     <pubDate>Mon, 05 Oct 2026 00:00:00 +0800</pubDate>
-    <description>常用的 Markdown 语法一页看完，顺便验证标题、列表、表格、代码块、引用这些样式的实际渲染结果。</description>
+    <description>常用的 Markdown 语法一页看完</description>
   </item>
   <item>
-    <title>欢迎来到你的本地博客</title>
+    <title>欢迎来到我的博客</title>
     <link>posts/welcome.html</link>
     <guid isPermaLink="false">welcome</guid>
     <pubDate>Mon, 05 Oct 2026 00:00:00 +0800</pubDate>
-    <description>这篇会自动生成一篇示例，用来演示整套流程：图形化编辑器写文章 → 一键生成静态站点 → 直接双击 HTML 离线阅读。</description>
+    <description>这篇会自动生成一篇示例，用来演示整套流程。</description>
   </item>
 </channel>
 </rss>
